@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculatrice</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="Operations.js"> </script>
+</head>
+<body>
+
+<div id="wrapper">
+    <h3  >
+        Calculatrice
+    </h3>
+
+    <br />
+
+    <form name="calculette" >
+
+
+
+
+        <dl> <dt><input id="screen" type="textfield" cols="20" name="ans" value="" ></dt> <br />
+
+
+
+
+
+    <dl>
+        <dt><input class="button"  type="button" value="1" onClick="document.calculette.ans.value+='1'">
+            <input class="button" type="button" value="2" onClick="document.calculette.ans.value+='2'">
+            <input class="button" type="button" value="3" onClick="document.calculette.ans.value+='3'">
+            <input class="button" type="button" value="+" onClick="document.calculette.ans.value+='+'"></dt>
+
+        <dt>
+            <input class="button" type="button" value="4" onClick="document.calculette.ans.value+='4'">
+            <input class="button" type="button" value="5" onClick="document.calculette.ans.value+='5'">
+            <input class="button" type="button" value="6" onClick="document.calculette.ans.value+='6'">
+            <input class="button" type="button" value="-" onClick="document.calculette.ans.value+='-'">
+        </dt>
+
+        <dt>
+            <input class="button" type="button" value="7" onClick="document.calculette.ans.value+='7'">
+            <input class="button" type="button" value="8" onClick="document.calculette.ans.value+='8'">
+            <input class="button" type="button" value="9" onClick="document.calculette.ans.value+='9'">
+            <input class="button" type="button" value="*" onClick="document.calculette.ans.value+='*'">
+        </dt>
+
+        <dt>
+            <input class="button" type="reset" value="C">
+            <input class="button" type="button" value="0" onClick="document.calculette.ans.value+='0'">
+            <input class="button" type="button" value="=" onClick="document. calculette.ans.value=eval(document.calculette.ans.value)">
+            <input class="button" type="button" value="/" onClick="document. calculette.ans.value+='/'">
+        </dt>
+
+
+    </dl>
+
+
+    <div id="footer">
+
+        Copyright &copy; 2022 Conchez.C<br />
+        <a href="mailto:cle.conchez@gmail.com">cle.conhez@gmail.com </a>
+    </div>
+
+</div>
+</body>
+</html>
